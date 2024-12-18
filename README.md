@@ -15,8 +15,8 @@ This Python script converts images (JPEG format) into ASCII art. It handles imag
 1.  **Clone the repository (optional):**
 
     ```bash
-    git clone [https://github.com/](https://github.com/)<your_username>/<your_repository>.git
-    cd <your_repository>
+    git clone https://github.com/ms-alejo/image-to-ascii.git
+    cd image-to-ascii
     pip install -r requirements.txt
     ```
 
@@ -27,13 +27,11 @@ This Python script converts images (JPEG format) into ASCII art. It handles imag
     *   **Normal conversion:**
 
         ```bash
-        python your_script_name.py
+        python main.py
         ```
 
     *   **Inverted conversion:**
 
         ```bash
-        python your_script_name.py invert
+        python main.py invert
         ```
-
-    Replace `your_script_name.py` with the actual name of your Python script file (e.g., `image_to_ascii.py`).
