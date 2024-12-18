@@ -1,4 +1,4 @@
-from PIL import Image
+from PIL import Image, ImageOps
 
 # constants
 ASCII_CHARS = '`^",:;Il!i~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$'
@@ -6,7 +6,7 @@ ASCII_CHARS = '`^",:;Il!i~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@
 
 def get_pixel_matrix(image, target_height):
     try:
-        image = image.transpose(method=Image.Transpose.TRANSVERSE)
+        image = ImageOps.exif_transpose(image)
         if image is None:
             raise ValueError("Image is not loaded properly.")
 
